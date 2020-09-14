@@ -1,8 +1,8 @@
-# 15WeeksOfCode - 15 Weeks = 15 Projects
+# 15WeeksOfCode = 15 Projects in 15 Weeks 
 
 It's my challenge (inpired by @florinpop17)
 
-#Using Javascript
+# Using Javascript
 
 Week | Project | Deadline
 ------------ | ------------ | -------------
