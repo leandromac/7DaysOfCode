@@ -1,4 +1,4 @@
-# 15WeekOfCode - 15 Weeks = 15 Projects
+# 15WeeksOfCode - 15 Weeks = 15 Projects
 
 It's my challenge (inpired by @florinpop17)
 
