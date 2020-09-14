@@ -2,5 +2,5 @@
 
 It's my first project!
 
-![GitHub Logo](/img/cover.png)
+![GitHub Logo](img/cover.png)
 Format: ![Alt Text](url)
