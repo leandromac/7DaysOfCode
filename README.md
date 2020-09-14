@@ -1,11 +1,11 @@
-# 10WeekOfCode - 15 Weeks = 15 Projects
+# 15WeekOfCode - 15 Weeks = 15 Projects
 
 It's my challenge (inpired by @florinpop17)
 
 #Using Javascript
 
 Week | Project | Deadline
------------- | -------------
+------------ | ------------ | -------------
 Week 1 | Todo List | 19/09/2020
 Week 2 | Contact phone | 26/09/2020
 Week 3 | Password Generate | 03/10/2020
