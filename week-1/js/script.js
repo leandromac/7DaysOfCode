@@ -15,10 +15,9 @@
                     </span>
                     ${input.value}`
       a.setAttribute('onclick', 'taskDone(this)')
-    list.appendChild(a)
-    input.value = ''
+      list.appendChild(a)
+      input.value = ''
     }
   })
-
 
             
