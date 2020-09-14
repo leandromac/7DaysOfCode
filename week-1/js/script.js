@@ -19,5 +19,7 @@
       input.value = ''
     }
   })
-
-            
+         
+  function taskDone(element) {
+    element.classList.add('has-text-success')
+  }
