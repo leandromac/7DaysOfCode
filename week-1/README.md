@@ -2,4 +2,5 @@
 
 It's my first project!
 
-# Using Javascript
+![GitHub Logo](/img/cover.png)
+Format: ![Alt Text](url)
