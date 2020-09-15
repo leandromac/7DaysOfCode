@@ -1,4 +1,4 @@
-# Week 1 - TODO List 
+# Day 1 - TODO List 
 
 It's my first project!
 
