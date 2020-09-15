@@ -1,9 +1,5 @@
-# Javascript Input Masks
-- CPF
-- CNPJ
-- TELEFONE
-- CEP
-- PIS
-- DATA
-- USUÁRIO
-- SENHA
+# Day 1 - TODO List 
+
+It's my second project!
+
+![GitHub Logo](img/cover.png)
