@@ -6,7 +6,7 @@ It's my challenge (inpired by @florinpop17)
 
 Day | Project | Status
 ------------ | ------------ | -------------
-Day 1 | Todo List | **Done**
+Day 1 | [Todo List](https://github.com/leandromac/7DaysOfCode/tree/master/Day-1) | **Done**
 Day 2 | Contact phone | -
 Day 3 | Password Generate | -
 Day 4 | Calculator | -
