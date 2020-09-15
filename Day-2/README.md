@@ -1,4 +1,4 @@
-# Day 1 - TODO List 
+# Day 2 - Input form masks
 
 It's my second project!
 
