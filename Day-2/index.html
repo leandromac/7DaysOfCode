@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Day 2 - Input Form Masks</title>
+  <style>
+    .container { max-width: 500px; margin-top: 50px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="form-group">  
+    <label>CPF:</label>
+    <input class="form-control" type="text" data-js="cpf" placeholder="000.000.000-00">
+  </div>
+  <div class="form-group">
+    <label>CNPJ:</label>
+    <input class="form-control" type="text" data-js="cnpj" placeholder="00.000.000/0000-00">
+  </div>
+  <div class="form-group">
+    <label>TELEFONE:</label>
+    <input class="form-control" type="text" data-js="phone" placeholder="(00) 00000-0000">
+  </div>
+  <div class="form-group">
+    <label>CEP:</label>
+    <input class="form-control" type="text" data-js="cep" placeholder="00000-000">
+  </div>
+  <div class="form-group">
+    <label>PIS:</label>
+    <input class="form-control" type="text" data-js="pis" placeholder="000.00000.00-0">
+  </div>
+  <div class="form-group">
+    <label>DATA:</label>
+    <input class="form-control" type="text" data-js="date" placeholder="00/00/0000">
+  </div>
+  <div class="form-group">
+    <label>USUÁRIO:</label>
+    <input class="form-control" type="text" data-js="user" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label>SENHA:</label>
+    <input class="form-control" type="text" data-js="password" placeholder="**********">
+  </div>
+  <div class="form-group">
+    <label>URL:</label>
+    <input class="form-control" type="text" data-js="url" placeholder="http://www.domain.com/">
+  </div>
+</div>
+<script src="script.js"></script>  
+</body>
+</html>

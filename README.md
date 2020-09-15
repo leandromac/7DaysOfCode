@@ -7,9 +7,9 @@ It's my challenge (inpired by @florinpop17)
 Day | Project | Status
 ------------ | ------------ | -------------
 Day 1 | [Todo List](https://github.com/leandromac/7DaysOfCode/tree/master/Day-1) | **Done**
-Day 2 | Contact phone | -
-Day 3 | Password Generate | -
-Day 4 | Calculator | -
-Day 5 | Chronometer | -
+Day 2 | Input form masks | **Done**
+Day 3 | to be defined | -
+Day 4 | to be defined | -
+Day 5 | to be defined | -
 Day 6 | to be defined | -
 Day 7 | to be defined || -
