@@ -20,9 +20,9 @@
           <div class="navbar-item">
             <input style="margin-right: 10px" class="input" type="text" placeholder="Digite o CEP aqui...">
             <div class="buttons">
-              <a class="button is-primary">
+              <button class="button is-primary">
                 <strong>Buscar CEP</strong>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
   </section>
 
   <section class="section">
-    <div class="container">
+    <div class="container result-text">
       <h1 class="title subtitle is-4">
         Resultado da pesquisa para o CEP <strong>48903210</strong>
       </h1>
@@ -57,13 +57,7 @@
         </tr>
       </thead>
       </tbody>
-        <tr>
-          <td>48903210</td>
-          <td>Rua São Francisco</td>
-          <td>Maringá</td>
-          <td>Juazeiro</td>
-          <td>BA</td>
-          <td>74</td>
+        <tr class="tr-body">
         </tr>
       </tbody>
     </table>
@@ -71,6 +65,6 @@
     </div>
   </section>
 
-  <script src="api-cep.js"></script>
+  <script src="src/js/api.cep.js"></script>
   </body>
 </html>
