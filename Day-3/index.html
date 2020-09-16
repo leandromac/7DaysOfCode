@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buscar CEP!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <h1 class="title is-4" style="padding: 12px 30px; color: #FFF">BuscarCEP</h1>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <input style="margin-right: 10px" class="input" type="text" placeholder="Digite o CEP aqui...">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Buscar CEP</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Pesquise com um CEP
+      </h1>
+      <p class="subtitle">
+        Encontre endereços usando apenas o <strong>CEP</strong>!
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title subtitle is-4">
+        Resultado da pesquisa para o CEP <strong>48903210</strong>
+      </h1>
+    <table class="table" style="width: 100%">
+      <thead>
+        <tr>
+          <th><abbr title="Position">CEP</abbr></th>
+          <th><abbr title="Position">Logradouro</abbr></th>
+          <th><abbr title="Position">Bairro</abbr></th>
+          <th><abbr title="Position">Cidade</abbr></th>
+          <th><abbr title="Position">Estado</abbr></th>
+          <th><abbr title="Position">DDD</abbr></th>
+        </tr>
+      </thead>
+      </tbody>
+        <tr>
+          <td>48903210</td>
+          <td>Rua São Francisco</td>
+          <td>Maringá</td>
+          <td>Juazeiro</td>
+          <td>BA</td>
+          <td>74</td>
+        </tr>
+      </tbody>
+    </table>
+
+    </div>
+  </section>
+
+  <script src="api-cep.js"></script>
+  </body>
+</html>
