@@ -18,22 +18,15 @@ buttonBuscarCEP.addEventListener("click", e => {
       result.innerHTML = `Resultado da pesquisa para o CEP <strong>${data.cep}</strong>`
       result.style.display = ''
 
-      let cep = document.querySelector('.cep')
-      let logradouro = document.querySelector('.logradouro')
-      let bairro = document.querySelector('.bairro')
-      let cidade = document.querySelector('.cidade')
-      let uf = document.querySelector('.uf')
-      let ddd = document.querySelector('.ddd')
-
-      cep.innerText = data.cep
-      logradouro.innerText = data.logradouro
-      bairro.innerText = data.bairro
-      cidade.innerText = data.localidade
-      uf.innerText = data.uf
-      ddd.innerText = data.ddd
+      let cep = document.querySelector('.cep').innerText = data.cep
+      let logradouro = document.querySelector('.logradouro').innerText = data.logradouro
+      let bairro = document.querySelector('.bairro').innerText = data.bairro
+      let localidade = document.querySelector('.localidade').innerText = data.localidade
+      let uf = document.querySelector('.uf').innerText = data.uf
+      let ddd = document.querySelector('.ddd').innerText = data.ddd
 
     } )
   })
-  .catch( e => console.log('Deu erro: ' + e.message))
+  .catch( e => alert('Desculpe, este CEP não foi encontrado!') )
 
 })
