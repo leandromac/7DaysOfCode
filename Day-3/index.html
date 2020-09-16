@@ -18,7 +18,7 @@
     
         <div class="navbar-end">
           <div class="navbar-item">
-            <input style="margin-right: 10px" class="input" type="text" placeholder="Digite o CEP aqui...">
+            <input style="margin-right: 10px" class="input is-primary" type="text" placeholder="Digite o CEP aqui...">
             <div class="buttons">
               <button class="button is-primary">
                 <strong>Buscar CEP</strong>
@@ -41,10 +41,8 @@
   </section>
 
   <section class="section">
-    <div class="container result-text">
-      <h1 class="title subtitle is-4">
-        Resultado da pesquisa para o CEP <strong>48903210</strong>
-      </h1>
+    <div class="container">
+      <h1 class="title result-text subtitle is-4" style="display:none"></h1>
     <table class="table" style="width: 100%">
       <thead>
         <tr>
@@ -56,8 +54,14 @@
           <th><abbr title="Position">DDD</abbr></th>
         </tr>
       </thead>
-      </tbody>
-        <tr class="tr-body">
+      </tbody class="table-body">
+        <tr>
+          <td class="cep"></td>
+          <td class="logradouro"></td>
+          <td class="bairro"></td>
+          <td class="cidade"></td>
+          <td class="uf"></td>
+          <td class="ddd"></td>
         </tr>
       </tbody>
     </table>
@@ -65,6 +69,15 @@
     </div>
   </section>
 
+  <section class="section">
+  <footer class="footer" style="background-color: #FFF">
+    <div class="content has-text-centered">
+      <p>
+        <strong>7DayOfCode</strong> by <a href="https://github.com/leandromac/7DaysOfCode" target="_blank">Leandro Macedo</a>. Day 3 - BuscarCEP
+      </p>
+    </div>
+  </footer>
+</section>
   <script src="src/js/api.cep.js"></script>
   </body>
 </html>

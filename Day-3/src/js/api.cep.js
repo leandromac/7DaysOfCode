@@ -14,27 +14,25 @@ buttonBuscarCEP.addEventListener("click", e => {
   fetch(`https://viacep.com.br/ws/${cep}/json/`)
   .then(response => { response.json()
     .then( data => {
-      let tr = document.querySelector('.tr-body')
-      let tdCEP = document.createElement('td')
-      let tdLogradouro = document.createElement('td')
-      let tdBairro = document.createElement('td')
-      let tdLocalidade = document.createElement('td')
-      let tdEstado = document.createElement('td')
-      let tdDDD = document.createElement('td')
       
-      tdCEP.innerText = data.cep
-      tdLogradouro.innerText = data.logradouro
-      tdBairro.innerText = data.bairro
-      tdLocalidade.innerText = data.localidade
-      tdEstado.innerText = data.uf
-      tdDDD.innerText = data.ddd
+      let result = document.querySelector('.result-text')
+      result.innerHTML = `Resultado da pesquisa para o CEP <strong>${data.cep}</strong>`
+      result.style.display = ''
 
-      tr.appendChild(tdCEP)
-      tr.appendChild(tdLogradouro)
-      tr.appendChild(tdBairro)
-      tr.appendChild(tdLocalidade)
-      tr.appendChild(tdEstado)
-      tr.appendChild(tdDDD)
+      let cep = document.querySelector('.cep')
+      let logradouro = document.querySelector('.logradouro')
+      let bairro = document.querySelector('.bairro')
+      let cidade = document.querySelector('.cidade')
+      let uf = document.querySelector('.uf')
+      let ddd = document.querySelector('.ddd')
+
+      cep.innerText = data.cep
+      logradouro.innerText = data.logradouro
+      bairro.innerText = data.bairro
+      cidade.innerText = data.localidade
+      uf.innerText = data.uf
+      ddd.innerText = data.ddd
+
     } )
   })
   .catch( e => console.log('Deu erro: ' + e.message))
