@@ -1,7 +1,6 @@
 const inputCEP = document.querySelector('.input')
 const buttonBuscarCEP = document.querySelector('.button')
 
-
 buttonBuscarCEP.addEventListener("click", e => {
   let cep = inputCEP.value.replace("-","")
   
