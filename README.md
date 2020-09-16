@@ -8,7 +8,7 @@ Day | Project | Status
 ------------ | ------------ | -------------
 Day 1 | [Todo List](https://github.com/leandromac/7DaysOfCode/tree/master/Day-1) | **Done**
 Day 2 | [Input form masks](https://github.com/leandromac/7DaysOfCode/tree/master/Day-2) | **Done**
-Day 3 | Buscar CEP (API) | -
+Day 3 | [Buscar CEP (API)](https://github.com/leandromac/7DaysOfCode/tree/master/Day-3) | **Done**
 Day 4 | to be defined | -
 Day 5 | to be defined | -
 Day 6 | to be defined | -
