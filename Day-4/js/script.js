@@ -3,6 +3,13 @@
 
   const t = 1000
 
+  function init() {
+    buttonsEvents()
+    customPage()
+    customText()
+    titleDefault()
+  }
+
   function buttonsEvents() {
     $('.btn-hide').click( e => { 
       $('.title-default').hide(t).show(0)
@@ -33,62 +40,74 @@
     })
   }
 
-  const backgroundDefault = $('body').css('background-color')
-  $('.bg-body').keyup(function(e) {
-      const bgBody = $(this).val()
-      if(bgBody.match(/#[\da-dA-F]{3,6}/)) {
-          $('body').css('background-color', bgBody)
+  function customPage() {
+    const backgroundDefault = $('body').css('background-color')
+    $('.bg-body').keyup(function(e) {
+        const bgBody = $(this).val()
+        if(bgBody !== "") {
+            $('body').css('background-color', bgBody)
+        } else {
+            $('body').css('background-color', backgroundDefault)
+        }
+    })
+    
+    $('.font-color').keyup(function(e) {
+      const fontColor = $(this).val()
+      if(fontColor !== "") {
+          $('.title-default').css('color', fontColor)
       } else {
-          $('body').css('background-color', backgroundDefault)
+          $('.title-default').css('color', '#000')
       }
-  })
-  
-  $('.font-color').keyup(function(e) {
-    const fontColor = $(this).val()
-    if(fontColor.match(/#[\da-dA-F]{3,6}/)) {
-        $('.title-default').css('color', fontColor)
-    } else {
-        $('.title-default').css('color', '#000')
-    }
-  })
-  
-  $('.bg-font').keyup(function(e) {
-    const bgFont = $(this).val()
-    if(bgFont.match(/#[\da-dA-F]{3,6}/)) {
-        $('.font-bg').css('background-color', bgFont)
-    } else {
-        $('.font-bg').css('background-color', backgroundDefault)
-    }
-  })
-  
-  $('.font-family').keyup(function(e) {
-    const fontFamily = $(this).val()
-    if(fontFamily !== '') {
-        $('.font-bg').css('font-family', fontFamily)
-    } else {
-        $('.font-bg').css('font-family', 'BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif')
-    }
-  })
-  
-  $('.font-size').keyup(function(e) {
-    const fontSize = $(this).val()
-    if(fontSize !== '') {
-        $('.title-default').css('font-size', fontSize)
-    } else {
-        $('.title-default').css('font-size', '2rem')
-    }
-  })
+    })
+    
+    $('.bg-font').keyup(function(e) {
+      const bgFont = $(this).val()
+      if(bgFont !== "") {
+          $('.font-bg').css('background-color', bgFont)
+      } else {
+          $('.font-bg').css('background-color', backgroundDefault)
+      }
+    })
+  }
 
-  $('.font-align').keyup(function(e) {
-    const fontAlign = $(this).val()
-    if(fontAlign !== '') {
-        $('.title-default').css('text-align', fontAlign)
-    } else {
-        $('.title-default').css('text-align', 'left')
-    }
-  })
+  function customText() {
+    $('.font-family').keyup(function(e) {
+      const fontFamily = $(this).val()
+      if(fontFamily !== '') {
+          $('.font-bg').css('font-family', fontFamily)
+      } else {
+          $('.font-bg').css('font-family', 'BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif')
+      }
+    })
+    
+    $('.font-size').keyup(function(e) {
+      const fontSize = $(this).val()
+      if(fontSize !== '') {
+          $('.title-default').css('font-size', fontSize)
+      } else {
+          $('.title-default').css('font-size', '2rem')
+      }
+    })
 
+    $('.font-align').keyup(function(e) {
+      const fontAlign = $(this).val()
+      if(fontAlign !== '') {
+          $('.title-default').css('text-align', fontAlign)
+      } else {
+          $('.title-default').css('text-align', 'left')
+      }
+    })
+  }
 
-  buttonsEvents()
+  function titleDefault() {
+    $('.input-text').keyup(function() {
+      this.value === "" ?
+        $('.title-default').text("There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.")
+      :
+        $('.title-default').text(this.value)
+    })
+  }
+
+  init()
 
 })(jQuery)
