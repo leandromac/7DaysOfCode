@@ -12,4 +12,4 @@ Day 3 | [Buscar CEP (API)](https://github.com/leandromac/7DaysOfCode/tree/master
 Day 4 | [Manipulanting DOM Element with jQuery](https://github.com/leandromac/7DaysOfCode/tree/master/Day-4) | **Done**
 Day 5 | to be defined | -
 Day 6 | to be defined | -
-Day 7 | to be defined || -
+Day 7 | to be defined | -
