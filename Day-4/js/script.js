@@ -99,10 +99,15 @@
     })
   }
 
+  function text() {
+    return $('.title-default').text("There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.")
+  }
+
   function titleDefault() {
+    text()
     $('.input-text').keyup(function() {
       this.value === "" ?
-        $('.title-default').text("There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.")
+        text()
       :
         $('.title-default').text(this.value)
     })
