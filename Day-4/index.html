@@ -18,8 +18,8 @@
     <div class="container container-1">
       
       <div class="card">
-        <div class="card-content">
-          <p class="title">
+        <div class="card-content font-bg">
+          <p class="title title-default">
             “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
           </p>
         </div>
@@ -70,13 +70,12 @@
               Animation
               <div class="buttons">
                 <button class="button btn-hide is-rounded is-small is-primary is-outlined">Hide</button>
-                <button class="button is-rounded is-small is-primary is-outlined">Show</button>
-                <button class="button is-rounded is-small is-primary is-outlined">FadeIn</button>
-                <button class="button is-rounded is-small is-primary is-outlined">FadeOut</button>
-                <button class="button is-rounded is-small is-primary is-outlined">FadeToggle</button>
-                <button class="button is-rounded is-small is-primary is-outlined">SlideToggle</button>
-                <button class="button is-rounded is-small is-primary is-outlined">SlideUp</button>
-                <button class="button is-rounded is-small is-primary is-outlined">SlideDown</button>
+                <button class="button btn-show is-rounded is-small is-primary is-outlined">Show</button>
+                <button class="button btn-fadeout is-rounded is-small is-primary is-outlined">FadeOut</button>
+                <button class="button btn-toggle is-rounded is-small is-primary is-outlined">Toggle</button>
+                <button class="button btn-fadetoggle is-rounded is-small is-primary is-outlined">FadeToggle</button>
+                <button class="button btn-slidetoggle is-rounded is-small is-primary is-outlined">SlideToggle</button>
+                <button class="button btn-slideup is-rounded is-small is-primary is-outlined">SlideUp</button>
               </div>
             </div>
           </div>
@@ -86,11 +85,7 @@
     </div>
   </section>
 
-  <script>
-    $('.btn-hide').click( e => { 
-      $('.text-default').hide(400)
-    })
-  </script>
+  <script src="js/script.js"></script>
 
   </body>
 </html>
