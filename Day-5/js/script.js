@@ -10,12 +10,19 @@
   btn.addEventListener('click', e => {
     e.preventDefault()
     urlGenerate()
-
   })
+
+  // btnCopy.addEventListener('click', e => {
+  //   e.preventDefault()
+  //   $result.select();
+  //   $result.setSelectionRange(0, 99999);
+  //   document.execCommand("copy");
+  //   alert("URL Copiada com sucesso!");
+  // })
 
   btnDelete.addEventListener('click', e => {
     e.preventDefault()
-    panelUrl.style.display = 'none'
+    $('.message').fadeOut(800)
   })
 
   function btnOpenFunc(url) {
@@ -24,7 +31,6 @@
   }
 
   function urlGenerate() {
-
     let phone = document.querySelector('.phone')
     let msg = document.querySelector('.msg')
     let inputUrl = document.querySelector('.url-generate')
@@ -34,11 +40,11 @@
       alert('Has fields empty!')
     }
     else {
+      $('.message').fadeIn(800)
       btnOpenFunc(url)
       panelUrl.style.display = ''
       return inputUrl.value = url
     }
-    
   }
 
 }
