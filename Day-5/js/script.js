@@ -28,7 +28,7 @@
     let phone = document.querySelector('.phone')
     let msg = document.querySelector('.msg')
     let inputUrl = document.querySelector('.url-generate')
-    let url = `https://api.whatsapp.com/send?=+55${phone.value.replace(/\D/g,'')}phone&text=${msg.value.replace(/\s/g, '%20')}`
+    let url = `https://api.whatsapp.com/send?phone=+55${phone.value.replace(/\D/g,'')}&text=${msg.value.replace(/\s/g, '%20')}`
 
     if(phone.value === '' || msg.value === '') {
       alert('Has fields empty!')
