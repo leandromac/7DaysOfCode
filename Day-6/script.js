@@ -18,9 +18,9 @@
 
     if(startNumber.value === '' || endNumber.value === '') {
       notification()
-    } else {
+    }
+    else {
       counterUp.innerText = ''
-      let theNumberSortedIs = document.querySelector('.heading')
       $('.heading').css('display', 'inline-block')
       $('.loading').css('display', 'inline-block')
       $('.heading').text($('.heading').text().replace(':', '...'))
@@ -40,6 +40,7 @@
   }
 
   function animationNumber() {
+
     const timeInterval = 5
     const duration = 0
     let numberSorted = rand(startNumber.value, endNumber.value)
@@ -64,6 +65,7 @@
         num += incremento      
       }, timeInterval)
     })
+
   }
 
 }
