@@ -10,37 +10,33 @@
       body { background-color: turquoise !important; color: #FFF }
       .is-large { font-size: 2.5rem !important }
     </style>
-
   </head>
   <body>
   <section class="section">
     <div class="container">
-
       <form>
         <div class="columns">
           <div class="column is-4"></div>
           <div class="column is-2">
-            <input class="input is-rounded is-primary" type="number" placeholder="Número inicial">
+            <input class="input is-rounded is-primary start-number" type="number" placeholder="Número inicial">
           </div>
           <div class="column is-2">
-            <input class="input is-rounded is-primary" type="number" placeholder="Número final">
+            <input class="input is-rounded is-primary end-number" type="number" placeholder="Número final">
           </div>
           <div class="column is-4"></div>
         </div>
         <div class="buttons has-addons is-centered">
-          <button class="button is-large is-primary is-light is-centered is-rounded">SORTEAR</button>
+          <button class="button is-large is-primary is-light is-centered is-rounded btn-random">SORTEAR</button>
         </div>
       </form>
-
       <nav class="level is-mobile">
         <div class="level-item has-text-centered">
           <div>
             <p class="heading is-size-4">O número sorteado é:</p>
-            <h1 class="title" style="font-size: 150px;font-weight: bolder"><span class="counter-up" data-count-to="5684"></span></h1>
+            <h1 class="title" style="font-size: 150px;font-weight: bolder"><span class="counter-up"></span></h1>
           </div>
         </div>
       </nav>
-
     </div>
   </section>
   <script src="script.js" type="text/javascript"></script>
