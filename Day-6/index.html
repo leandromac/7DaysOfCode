@@ -12,8 +12,21 @@
     </style>
   </head>
   <body>
+    
   <section class="section">
     <div class="container">
+
+      <div class="columns">
+        <div class="column is-4"></div>
+        <div class="column is-4">
+          <div class="notification is-warning is-light" style="display: none">
+            <button class="delete"></button>
+            Os campos <strong>Número inicial</strong> e <strong>Número final</strong> são obrigatórios!
+          </div>
+        </div>
+        <div class="column is-4"></div>
+      </div>
+
       <form>
         <div class="columns">
           <div class="column is-4"></div>
@@ -32,13 +45,25 @@
       <nav class="level is-mobile">
         <div class="level-item has-text-centered">
           <div>
-            <p class="heading is-size-4">O número sorteado é:</p>
-            <h1 class="title" style="font-size: 150px;font-weight: bolder"><span class="counter-up"></span></h1>
+            <p class="heading is-size-5" style="margin-top: 20px; display: none">O número sorteado é...</p>
+            <p><img class="loading" src="img/loading.gif" style="display: none"></p>
+              <h1 class="title" style="font-size: 150px;font-weight: bolder"><span class="counter-up"></span></h1>
           </div>
         </div>
       </nav>
     </div>
   </section>
+
+  <section class="section">
+    <footer class="footer" style="background-color: turquoise">
+      <div class="content has-text-centered">
+        <p>
+          <strong>7DayOfCode</strong> by <a href="https://github.com/leandromac/7DaysOfCode" target="_blank">Leandro Macedo</a>. Day 6 - SORTEAR NÚMERO
+        </p>
+      </div>
+    </footer>
+  </section>
+
   <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

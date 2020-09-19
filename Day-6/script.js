@@ -1,6 +1,7 @@
 ;{
   'use strict'
 
+  $('.notification').hide(0)
   const rand = (minimum, maximum) => {
     const min = Math.ceil(minimum)
     const max = Math.floor(maximum)
@@ -14,12 +15,33 @@
 
   btnRandom.addEventListener('click', e => {
     e.preventDefault()
-    animationNumber()
+
+    if(startNumber.value === '' || endNumber.value === '') {
+      notification()
+    } else {
+      counterUp.innerText = ''
+      let theNumberSortedIs = document.querySelector('.heading')
+      $('.heading').css('display', 'inline-block')
+      $('.loading').css('display', 'inline-block')
+      $('.heading').text($('.heading').text().replace(':', '...'))
+
+      setTimeout(function(){
+        $('.loading').css('display', 'none')
+        animationNumber()
+        $('.heading').text($('.heading').text().replace('...', ':'))
+      }, 4000)
+    }
+
   })
+
+  function notification() {
+    $('.notification').show(1000).css('display', 'inline-block')
+    setInterval( function() { $('.notification').hide(1000) }, 7000)
+  }
 
   function animationNumber() {
     const timeInterval = 5
-    const duration = 1000
+    const duration = 0
     let numberSorted = rand(startNumber.value, endNumber.value)
     counterUp.setAttribute('data-count-to', numberSorted)
     console.log(numberSorted)
@@ -43,4 +65,5 @@
       }, timeInterval)
     })
   }
+
 }
