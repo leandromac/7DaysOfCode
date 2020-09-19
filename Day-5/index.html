@@ -6,12 +6,18 @@
     <title>Generate Whatsapp Link</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <style>
-      .phone { width: 30% }
+      .phone { width: 25% }
       .msg { width: 54% }
       .container { max-width: 600px }
     </style>
   </head>
   <body>
+    <div class="notification is-primary is-light generated-notification">
+      <strong>URL successfully generated!</strong>
+    </div>
+    <div class="notification is-primary is-light copied-notification">
+      <strong>URL successfully copied!</strong>
+    </div>
   <section class="section">
     <div class="container">
       <h2 class="title has-text-centered">Whatsapp Link Generator</h2>
@@ -20,7 +26,7 @@
           <div class="control">        
             <input type="text" class="input phone" placeholder="Whatsapp number..." />
             <input type="text" class="input msg" placeholder="Type a message..." />
-            <button class="btn button is-primary" type="subimt">GERAR</button>
+            <button class="btn button is-primary" type="subimt">GENERATE</button>
           </div>
         </div>
 
