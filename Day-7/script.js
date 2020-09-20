@@ -1,7 +1,6 @@
 ;{
   'user strict'
 
-  const pass = document.querySelector('.pass')
   const withLength = document.querySelector('.length')
   const withUppercase = document.querySelector('.uppercase')
   const withLowercase = document.querySelector('.lowercase')
@@ -31,7 +30,7 @@
   }
 
   function generatePassword() {
-    const len = lenEl.value;
+    const len = withLength.value;
 
     let password = "";
 
@@ -56,7 +55,33 @@
         password += x;
     }
 
-    pass.innerText = password;
-}
+    $('.pass').val(password);
+    
+  }
+
+  function generateX() {
+    const xs = [];
+    if (withUppercase.checked) {
+        xs.push(getUppercase());
+    }
+
+    if (withLowercase.checked) {
+        xs.push(getLowercase());
+    }
+
+    if (withNumbers.checked) {
+        xs.push(getNumber());
+    }
+
+    if (withSymbols.checked) {
+        xs.push(getSymbol());
+    }
+
+    if (xs.length === 0) return "";
+
+    return xs[Math.floor(Math.random() * xs.length)];
+  }
+
+  btnGenerate.addEventListener("click", generatePassword);
 
 }
