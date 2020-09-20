@@ -10,16 +10,24 @@
       .checkbox { width: 20px; height: 20px }
       .control { padding: 10px; margin: 0px 10px }
       .control > input { float: right }
+      .notification { border-radius: 0px;padding: 10px;text-align: center;margin: 0px; display: none }
     </style>
   </head>
   <body>
   <section class="section">
     <h1 class="has-text-centered" style="color: hsl(0, 0%, 71%)">Password Generator</h1>
     <div class="container">
+      <div class="notification is-primary is-light">
+        Your URL was successfully copied!
+      </div>
       <div class="field">
         <div class="control">
           <input class="input pass is-large is-warning" type="text" value="Tx1^x8OSQ1N%Yh@" placeholder="Your password">
+          <a class="button btn-copy is-small is-fullwidth is-link" style="display: none">
+            Click here to copy this password
+          </a>
         </div>
+
       </div>
       <div class="field">
         <div class="control">

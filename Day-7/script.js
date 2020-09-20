@@ -30,6 +30,7 @@
   }
 
   function generatePassword() {
+    showBtnCopy()
     const len = withLength.value;
 
     let password = "";
@@ -83,5 +84,25 @@
   }
 
   btnGenerate.addEventListener("click", generatePassword);
+
+  function showBtnCopy() {
+    $('.btn-copy').show(1000).click(function() {
+
+      $('.pass').click().select()
+    
+      document.execCommand("copy")
+      notification()
+
+    })
+  }
+
+  function notification() {
+    $('.notification').slideToggle(1000)
+
+    setTimeout(function() {
+      $('.notification').hide(1000)
+    }, 5000)
+
+  }
 
 }

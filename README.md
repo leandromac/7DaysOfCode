@@ -12,4 +12,4 @@ Day 3 | [Buscar CEP (API)](https://github.com/leandromac/7DaysOfCode/tree/master
 Day 4 | [Manipulanting DOM Element with jQuery](https://github.com/leandromac/7DaysOfCode/tree/master/Day-4) | **Done**
 Day 5 | [Whatsapp Link Generator](https://github.com/leandromac/7DaysOfCode/tree/master/Day-5) | **Done**
 Day 6 | [Sortear Números Aleatório](https://github.com/leandromac/7DaysOfCode/tree/master/Day-6) | **Done**
-Day 7 | to be defined | -
+Day 7 | [Password Generator](https://github.com/leandromac/7DaysOfCode/tree/master/Day-7) | **Done**
